@@ -11,5 +11,9 @@
 </p>
 
 <h4 align="center">Multi-Picture Spatial predefined 2-D filter</h4>
+<p align="center">
+<img src="https://storage.googleapis.com/fns-blog/public/frontend/assets/images/document/ImageProcessing/multiImageFiltering.png" width="600" height="500">
+</p>
+
 
 ---
