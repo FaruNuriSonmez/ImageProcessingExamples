@@ -1,6 +1,12 @@
 # ImageProcessingExamples
 [![](https://img.shields.io/badge/author-@farunurisonmez-blue.svg?style=flat)](https://farunurisonmez.com)
 
+<h4 align="center">Histogram Equalization</h4>
+
+<p align="center">
+<img src="https://storage.googleapis.com/fns-blog/public/frontend/assets/images/document/ImageProcessing/histogramEqualization.png" width="600" height="500">
+</p>
+
 <h4 align="center">Image Filtering</h4>
 
 ---
