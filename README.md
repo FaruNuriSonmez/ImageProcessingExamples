@@ -1,5 +1,10 @@
 # ImageProcessingExamples
 [![](https://img.shields.io/badge/author-@farunurisonmez-blue.svg?style=flat)](https://farunurisonmez.com)
+
+
+<h4 align="center">Intensity Transformations and Spatial Filtering</h4>
+---
+
 <h4 align="center">Constrast Streching</h4>
 <p align="center">
 <img src="https://storage.googleapis.com/fns-blog/public/frontend/assets/images/document/ImageProcessing/constrastStreching.png" width="600" height="500">
