@@ -1,5 +1,5 @@
 %   FSPECIAL Create predefined 2-D filters.
-%   H = FSPECIAL(TYPE) creates a two-dimensional filter H of the
+%   H = fspecial(‘filter’ , parameter) creates a two-dimensional filter H of the
 %   specified type. Possible values for TYPE are:
 %
 %     'average'   averaging filter
@@ -18,56 +18,57 @@
 
 clear; close all;
 
-img = imread('examination.tif');
+img = imread('examination.tif'); % Image Uploaded.
+img=im2double(img); % Converted to double type.
 
 subplot(3,3,1); 
 imshow(img); 
 title('Original Image','FontSize',15);
 
-type = fspecial('average',3);
-Averaging = imfilter(img,type,'replicate');
+hAverageFilter = fspecial('average',3); %mask 3x3
+averageFilter = imfilter(img,hAverageFilter,'replicate');
 subplot(3,3,2); 
-imshow(Averaging);
-title('Averaging Filter Image','FontSize',15);
+imshow(averageFilter);
+title('Averaging Filter','FontSize',15);
 
-type = fspecial('disk',10);
-blurred = imfilter(img,type,'replicate');
+hBlurredFilter = fspecial('disk',10);
+blurred = imfilter(img,hBlurredFilter,'replicate');
 subplot(3,3,3); 
 imshow(blurred); 
-title('Blurred Image','FontSize',15);
+title('Blurred Filter','FontSize',15);
 
-type = fspecial('gaussian',10,2);
-gaussian = imfilter(img,type,'replicate');
+hGaussianFilter = fspecial('gaussian',3,2);
+gaussian = imfilter(img,hGaussianFilter,'replicate');
 subplot(3,3,4); 
 imshow(gaussian); 
-title('Gaussian Lowpass Filter','FontSize',15);
+title('Gaussian Filter','FontSize',15);
 
-type = fspecial('laplacian');
-laplacian = imfilter(img,type,'replicate');
+hLaplacianFilter = fspecial('laplacian');
+laplacian = imfilter(img,hLaplacianFilter,'replicate');
 subplot(3,3,5); 
 imshow(laplacian); 
 title('Laplacian Filter','FontSize',15);
 
-type = fspecial('log');
-log = imfilter(img,type,'replicate');
+hLogFilter = fspecial('log');
+log = imfilter(img, hLogFilter, 'replicate');
 subplot(3,3,6); 
 imshow(log); 
 title('Log Filter','FontSize',15);
 
-type = fspecial('motion');
-motion = imfilter(img,type,'replicate');
+hMotionFilter = fspecial('motion', 50, 45);
+motion = imfilter(img,hMotionFilter,'replicate');
 subplot(3,3,7); 
 imshow(motion); 
 title('Motion Filter','FontSize',15);
 
-type = fspecial('prewitt');
-prewitt = imfilter(img,type,'replicate');
+hPrewittFilter = fspecial('prewitt');
+prewitt = imfilter(img,hPrewittFilter,'replicate');
 subplot(3,3,8); 
 imshow(prewitt); 
 title('Prewitt Filter','FontSize',15);
 
-type = fspecial('sobel');
-sobel = imfilter(img,type,'replicate');
+hSobelFilter = fspecial('sobel');
+sobel = imfilter(img,hSobelFilter,'replicate');
 subplot(3,3,9); 
 imshow(sobel); 
 title('Sobel Filter','FontSize',15);
