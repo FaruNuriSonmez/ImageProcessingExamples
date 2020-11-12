@@ -1,6 +1,5 @@
-# ImageProcessingExamples
+# Image Processing Examples
 [![](https://img.shields.io/badge/author-@farunurisonmez-blue.svg?style=flat)](https://farunurisonmez.com)
-
 
 <h4 align="center">Intensity Transformations and Spatial Filtering</h4>
 ---
