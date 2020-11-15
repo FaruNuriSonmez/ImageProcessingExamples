@@ -1,6 +1,6 @@
-clc; clear all; close all;
+clc; clear; close all;
 
-img = imread('pout.tif');
+img = imread('images/pout.tif');
 
 r1=input('Enter r1: ');
 r2=input('Enter r2: ');

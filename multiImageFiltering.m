@@ -2,7 +2,8 @@
 
 clear; close all;
 
-imagefiles=[dir('*.tif');dir('*.png');dir('*.bmp')] ;  % Get tif, png and bmp files in the present folder 
+
+imagefiles=dir(['images/','*.tif']);% Get tif, png and bmp files in the present folder 
 N = length(imagefiles) ;  % Total number of image files 
 for i = 1:N  % loop for each file 
     currentfilename = imagefiles(i).name;
