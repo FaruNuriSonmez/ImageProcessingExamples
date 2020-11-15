@@ -1,6 +1,6 @@
-clc; clear all;
+clc; clear;
 
-img = imread('pout.tif');
+img = imread('images/pout.tif');
 
 max_row = size(img,1);
 max_column = size(img,2);
