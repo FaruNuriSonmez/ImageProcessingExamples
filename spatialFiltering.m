@@ -18,7 +18,7 @@
 
 clear; close all;
 
-img = imread('examination.tif'); % Image Uploaded.
+img = imread('images/examination.tif'); % Image Uploaded.
 img=im2double(img); % Converted to double type.
 
 subplot(3,3,1); 
