@@ -1,6 +1,6 @@
 clear; close all;
 
-img = imread('markerFrame.tif'); % Image Uploaded.
+img = imread('images/cameraman.tif'); % Image Uploaded.
 img=im2double(img); % Converted to double type.
 
 subplot(2,3,1); 
